@@ -46,7 +46,7 @@
          </property>
          <property name="font">
           <font>
-           <family>Times New Roman</family>
+           <family>Arial</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -126,6 +126,12 @@
            <height>30</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
         </widget>
        </item>
       </layout>
@@ -161,7 +167,7 @@
          </property>
          <property name="font">
           <font>
-           <family>Times New Roman</family>
+           <family>Arial</family>
            <pointsize>12</pointsize>
           </font>
          </property>

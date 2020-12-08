@@ -19,17 +19,20 @@ SOURCES += \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
-    selectwindow.cpp
+    selectwindow.cpp \
+    tablewindow.cpp
 
 HEADERS += \
     loginwindow.h \
     mainwindow.h \
-    selectwindow.h
+    selectwindow.h \
+    tablewindow.h
 
 FORMS += \
     loginwindow.ui \
     mainwindow.ui \
-    selectwindow.ui
+    selectwindow.ui \
+    tablewindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

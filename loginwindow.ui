@@ -30,7 +30,7 @@
     <widget class="QLabel" name="labelLogo">
      <property name="font">
       <font>
-       <family>Times New Roman</family>
+       <family>Arial</family>
        <pointsize>16</pointsize>
        <weight>75</weight>
        <bold>true</bold>
@@ -52,8 +52,10 @@
         <widget class="QLabel" name="label">
          <property name="font">
           <font>
-           <family>Times New Roman</family>
+           <family>Arial</family>
            <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -78,7 +80,7 @@
         <widget class="QLineEdit" name="lineEdit">
          <property name="font">
           <font>
-           <family>Times New Roman</family>
+           <family>Arial</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -92,8 +94,10 @@
         <widget class="QLabel" name="label_2">
          <property name="font">
           <font>
-           <family>Times New Roman</family>
+           <family>Arial</family>
            <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -118,7 +122,7 @@
         <widget class="QLineEdit" name="lineEdit_2">
          <property name="font">
           <font>
-           <family>Times New Roman</family>
+           <family>Arial</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -144,10 +148,10 @@
      </property>
      <property name="font">
       <font>
-       <family>Times New Roman</family>
+       <family>Arial</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">

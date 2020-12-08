@@ -36,3 +36,15 @@ void MainWindow::on_buttonSelectBy_clicked()
     tableModel->setQuery("select * from shipments where " + dbSelectBy->selectColumn + " = " + dbSelectBy->selectValue);
     refreshTable();
 }
+
+void MainWindow::on_buttonOffices_clicked()
+{
+    officesTable = new TableWindow("Offices");
+    officesTable->show();
+}
+
+void MainWindow::on_buttonClients_clicked()
+{
+    clientsTable = new TableWindow("Customers");
+    clientsTable->show();
+}
