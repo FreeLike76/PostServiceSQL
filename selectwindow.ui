@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SelectWindow</class>
+ <widget class="QDialog" name="SelectWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>95</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>90</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>95</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Select criteria</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="selectColumn">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>ShipmentID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SenderID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ReceiverID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OfficeSenderID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OfficeReceiverID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Status</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DeliveryID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LabelID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CreationDate</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ShippedDate</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ArrivalDate</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ReceivedDate</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="selectValue">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonSelect">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Select</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

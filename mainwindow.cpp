@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     dbLogin = new LoginWindow();
+    dbSelectBy = new SelectWindow();
     dbLogin->exec();
     tableModel = new QSqlQueryModel();
 }
@@ -16,6 +17,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::refreshTable()
+{
+    ui->tableView->setModel(tableModel);
+    ui->tableView->resizeColumnsToContents();
+    ui->tableView->show();
+}
 
 void MainWindow::on_buttonSelect_clicked()
 {
@@ -23,9 +30,9 @@ void MainWindow::on_buttonSelect_clicked()
     refreshTable();
 }
 
-void MainWindow::refreshTable()
+void MainWindow::on_buttonSelectBy_clicked()
 {
-    ui->tableView->setModel(tableModel);
-    ui->tableView->resizeColumnsToContents();
-    ui->tableView->show();
+    dbSelectBy->exec();
+    tableModel->setQuery("select * from shipments where " + dbSelectBy->selectColumn + " = " + dbSelectBy->selectValue);
+    refreshTable();
 }

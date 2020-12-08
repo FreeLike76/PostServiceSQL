@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QSqlQueryModel>
 #include "loginwindow.h"
+#include "selectwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,8 +18,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     LoginWindow* dbLogin;
+    SelectWindow* dbSelectBy;
 private slots:
     void on_buttonSelect_clicked();
+
+    void on_buttonSelectBy_clicked();
 
 private:
     Ui::MainWindow *ui;
