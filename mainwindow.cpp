@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     dbLogin = new LoginWindow();
     dbSelectBy = new SelectWindow();
+    dbInsert = new InsertWindow();
     dbLogin->exec();
     tableModel = new QSqlQueryModel();
 }
@@ -47,4 +48,9 @@ void MainWindow::on_buttonClients_clicked()
 {
     clientsTable = new TableWindow("Customers");
     clientsTable->show();
+}
+
+void MainWindow::on_buttonAdd_clicked()
+{
+    dbInsert->exec();
 }

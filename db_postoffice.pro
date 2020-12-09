@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    insertwindow.cpp \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -23,12 +24,14 @@ SOURCES += \
     tablewindow.cpp
 
 HEADERS += \
+    insertwindow.h \
     loginwindow.h \
     mainwindow.h \
     selectwindow.h \
     tablewindow.h
 
 FORMS += \
+    insertwindow.ui \
     loginwindow.ui \
     mainwindow.ui \
     selectwindow.ui \
