@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     dbLogin = new LoginWindow();
     dbSelectBy = new SelectWindow();
     dbInsert = new InsertWindow();
+    dbEdit = new EditSelectWindow();
     dbLogin->exec();
     tableModel = new QSqlQueryModel();
 }
@@ -52,5 +53,16 @@ void MainWindow::on_buttonClients_clicked()
 
 void MainWindow::on_buttonAdd_clicked()
 {
-    dbInsert->exec();
+    dbInsert->show();
+}
+
+void MainWindow::on_buttonEdit_clicked()
+{
+    dbEdit->exec();
+}
+
+void MainWindow::on_buttonLabels_clicked()
+{
+    labelsTable = new TableWindow("InfoLabels");
+    labelsTable->show();
 }

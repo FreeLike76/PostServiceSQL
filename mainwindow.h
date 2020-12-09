@@ -7,6 +7,7 @@
 #include "selectwindow.h"
 #include "tablewindow.h"
 #include "insertwindow.h"
+#include "editselectwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,6 +23,7 @@ public:
     LoginWindow* dbLogin;
     SelectWindow* dbSelectBy;
     InsertWindow* dbInsert;
+    EditSelectWindow* dbEdit;
 private slots:
     void on_buttonSelect_clicked();
 
@@ -33,11 +35,16 @@ private slots:
 
     void on_buttonAdd_clicked();
 
+    void on_buttonEdit_clicked();
+
+    void on_buttonLabels_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSqlQueryModel* tableModel;
     void refreshTable();
     TableWindow* clientsTable;
     TableWindow* officesTable;
+    TableWindow* labelsTable;
 };
 #endif // MAINWINDOW_H
