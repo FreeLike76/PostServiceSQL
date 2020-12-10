@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>876</width>
-    <height>606</height>
+    <height>620</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -316,7 +316,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Edit Table</string>
+         <string>Table</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -324,7 +324,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="buttonEdit">
+       <widget class="QPushButton" name="buttonModify">
         <property name="minimumSize">
          <size>
           <width>200</width>
@@ -344,7 +344,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Edit</string>
+         <string>Modify</string>
         </property>
        </widget>
       </item>

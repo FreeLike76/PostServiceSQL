@@ -56,7 +56,7 @@ void MainWindow::on_buttonAdd_clicked()
     dbInsert->show();
 }
 
-void MainWindow::on_buttonEdit_clicked()
+void MainWindow::on_buttonModify_clicked()
 {
     dbEdit->exec();
 }

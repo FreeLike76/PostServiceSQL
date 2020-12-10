@@ -35,7 +35,7 @@ private slots:
 
     void on_buttonAdd_clicked();
 
-    void on_buttonEdit_clicked();
+    void on_buttonModify_clicked();
 
     void on_buttonLabels_clicked();
 
