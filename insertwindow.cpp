@@ -42,6 +42,8 @@ void InsertWindow::on_pushButton_clicked()
         insert->bindValue(":label", labelID.toString());
         if(!insert->exec())
         {
+            insert->prepare("delete from InfoLabels where LabelID = " + labelID.toString());
+            insert->exec();
             errorMsg->setText("Shipments: insert failed");
             errorMsg->show();
         }
