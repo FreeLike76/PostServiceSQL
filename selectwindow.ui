@@ -90,26 +90,6 @@
            <string>LabelID</string>
           </property>
          </item>
-         <item>
-          <property name="text">
-           <string>CreationDate</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>ShippedDate</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>ArrivalDate</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>ReceivedDate</string>
-          </property>
-         </item>
         </widget>
        </item>
        <item>
